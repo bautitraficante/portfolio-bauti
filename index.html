@@ -46,7 +46,7 @@
 
     <section id="home" class="home">
         <div class="home-img">
-            <img src="leandro-traficante.png" alt="Leandro Traficante Profile">
+            <img src="leandro-traficante2.jpeg" alt="Leandro Traficante Profile">
         </div>
         <div class="home-content">
             <h1>Hi, I’m <span>Leandro</span></h1>
@@ -65,7 +65,7 @@
                 <a href="https://github.com/leandrotraficante" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div <div class="btn-group">
             <a href="#contact" class="btn">Contact Me</a>
-            <a href="https://drive.google.com/file/d/1q2QZBs8QuvtjsJFH7rvGcOq64Cl1l4fy/view?usp=sharing"
+            <a href="https://drive.google.com/file/d/1VEwkvIGv1D1kpO1ReAn6MFQXV4_YMW6R/view?usp=sharing"
                 class="btn btn-secondary" target="_blank">Download CV</a>
         </div>
         </div>
@@ -75,7 +75,7 @@
         <h2 class="section-title">My <span>Skills</span></h2>
         <div class="skills-container">
             <div class="skill-category">
-                <h3>Languages & Frameworks</h3>
+                <h3>Programming Languages</h3>
                 <div class="skill-items">
                     <div class="skill-item">
                         <i class="fab fa-js"></i>
@@ -83,14 +83,29 @@
                         <div class="skill-level" data-level="85"></div>
                     </div>
                     <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>TypeScript</span>
+                        <div class="skill-level" data-level="75"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend Frameworks</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
                         <i class="fab fa-node-js"></i>
                         <span>Node.js</span>
                         <div class="skill-level" data-level="80"></div>
                     </div>
                     <div class="skill-item">
                         <i class="fas fa-server"></i>
-                        <span>Express</span>
+                        <span>Express.js</span>
                         <div class="skill-level" data-level="75"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-layer-group"></i>
+                        <span>NestJS</span>
+                        <div class="skill-level" data-level="70"></div>
                     </div>
                     <div class="skill-item">
                         <i class="fab fa-react"></i>
@@ -100,18 +115,53 @@
                 </div>
             </div>
             <div class="skill-category">
-                <h3>Databases & Tools</h3>
+                <h3>Databases & ORMs</h3>
                 <div class="skill-items">
                     <div class="skill-item">
                         <i class="fas fa-database"></i>
-                        <span>MongoDB</span>
+                        <span>MongoDB + Mongoose</span>
                         <div class="skill-level" data-level="75"></div>
                     </div>
                     <div class="skill-item">
                         <i class="fas fa-database"></i>
-                        <span>SQL (MySQL)</span>
+                        <span>PostgreSQL + TypeORM</span>
+                        <div class="skill-level" data-level="70"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>MySQL</span>
                         <div class="skill-level" data-level="80"></div>
                     </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Advanced Tools & APIs</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>JWT Authentication</span>
+                        <div class="skill-level" data-level="80"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-comments"></i>
+                        <span>Socket.IO</span>
+                        <div class="skill-level" data-level="70"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-book"></i>
+                        <span>Swagger/OpenAPI</span>
+                        <div class="skill-level" data-level="70"></div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-sitemap"></i>
+                        <span>MVC Architecture</span>
+                        <div class="skill-level" data-level="80"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Development Tools</h3>
+                <div class="skill-items">
                     <div class="skill-item">
                         <i class="fab fa-git-alt"></i>
                         <span>Git & GitHub</span>
@@ -122,11 +172,6 @@
                         <span>VS Code & CursorAI</span>
                         <div class="skill-level" data-level="90"></div>
                     </div>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3>Web Design</h3>
-                <div class="skill-items">
                     <div class="skill-item">
                         <i class="fab fa-html5"></i>
                         <span>HTML5</span>
@@ -225,27 +270,7 @@
     <section id="projects" class="projects">
         <h2 class="section-title">My <span>Projects</span></h2>
         <div class="projects-container">
-            <div class="project-item">
-                <div class="project-image">
-                    <img src="./API_books.png" class="api-image" alt="Biblioteca API Code">
-                </div>
-                <div class="project-content">
-                    <h3>Personal Library API</h3>
-                    <p>Complete REST API backend for personal library management with full CRUD operations, advanced
-                        search filters, pagination, and MongoDB integration using Mongoose. Features include genre
-                        filtering, reading status tracking, and comprehensive book management with validation.</p>
-                    <div class="project-tech">
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>MongoDB</span>
-                        <span>Mongoose</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/leandrotraficante/API_Biblioteca_Personal" target="_blank"
-                            class="btn btn-small btn-secondary">View Code</a>
-                    </div>
-                </div>
-            </div>
+
             <div class="project-item">
                 <div class="project-image">
                     <img src="./calendario-medico-mutual-medica.png" alt="Turnos Médicos">
@@ -271,7 +296,60 @@
                     </div>
                 </div>
             </div>
-
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="./electroshop-ecommerce.png" alt="ElectroShop E-commerce">
+                </div>
+                <div class="project-content">
+                    <h3>ElectroShop E-commerce Application</h3>
+                    <p>E-commerce application for home appliances with robust backend architecture built on NestJS and
+                        TypeScript.
+                        Features advanced real-time chat system with Socket.IO, comprehensive product management, secure
+                        JWT authentication,
+                        PostgreSQL database with TypeORM integration, and complete API documentation with Swagger.
+                        Implements MVC architecture with enterprise-level security measures and real-time notifications.
+                    </p>
+                    <div class="project-tech">
+                        <span>NestJS</span>
+                        <span>TypeScript</span>
+                        <span>PostgreSQL</span>
+                        <span>TypeORM</span>
+                        <span>Socket.IO</span>
+                        <span>JWT</span>
+                        <span>Swagger</span>
+                        <span>MVC</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small in-progress-btn"
+                            style="opacity: 0.6; cursor: not-allowed; pointer-events: none;">
+                            <i class="fas fa-hard-hat"></i> In Progress
+                        </a>
+                        <a href="https://github.com/leandrotraficante/electro-commerce" target="_blank"
+                            class="btn btn-small btn-secondary">View Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="./API_books.png" class="api-image" alt="Biblioteca API Code">
+                </div>
+                <div class="project-content">
+                    <h3>Personal Library API</h3>
+                    <p>Complete REST API backend for personal library management with full CRUD operations, advanced
+                        search filters, pagination, and MongoDB integration using Mongoose. Features include genre
+                        filtering, reading status tracking, and comprehensive book management with validation.</p>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>MongoDB</span>
+                        <span>Mongoose</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/leandrotraficante/API_Biblioteca_Personal" target="_blank"
+                            class="btn btn-small btn-secondary">View Code</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
