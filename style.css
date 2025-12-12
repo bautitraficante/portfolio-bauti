@@ -252,6 +252,7 @@ section{
     border: 2px solid var(--accent-color);
     transition: 0.3s ease;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn:hover{
@@ -299,6 +300,7 @@ section{
 .btn-small {
     padding: 1rem 2rem;
     font-size: 1.4rem;
+    text-align: center;
 }
 
 /* Skills Section */
@@ -308,10 +310,21 @@ section{
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+@media (min-width: 1400px) {
+    .skills-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.skill-category {
+    display: flex;
+    flex-direction: column;
 }
 
 .skill-category h3 {
@@ -319,6 +332,10 @@ section{
     color: var(--primary-color);
     margin-bottom: 3rem;
     text-align: center;
+    min-height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .skill-items {
@@ -343,11 +360,43 @@ section{
     box-shadow: 0 5px 15px var(--shadow-color);
 }
 
-.skill-item i {
+.skill-item i,
+.skill-item .nestjs-icon-wrapper,
+.skill-item .typescript-icon-wrapper {
     font-size: 2.4rem;
     color: var(--accent-color);
     width: 4rem;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.skill-item .nestjs-icon-wrapper {
+    width: 4rem;
+}
+
+.skill-item .nestjs-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.skill-item .typescript-icon-wrapper {
+    width: 4rem;
+}
+
+.skill-item .typescript-icon {
+    width: 2.1rem;
+    height: 2.1rem;
+}
+
+.skill-item .typescript-icon rect {
+    fill: var(--accent-color);
+}
+
+.skill-item .typescript-icon path {
+    fill: var(--light-bg);
 }
 
 .skill-item span {
@@ -984,6 +1033,22 @@ section{
         max-width: 300px;
         text-align: center;
     }
+    
+    .btn-small {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .project-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .project-links .btn-small {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1019,6 +1084,15 @@ section{
     
     .project-item {
         margin: 0 1rem;
+    }
+    
+    .btn-small {
+        text-align: center;
+    }
+    
+    .project-links {
+        flex-direction: column;
+        gap: 1rem;
     }
     
     .contact-container {
