@@ -52,11 +52,8 @@
             <h1>Hi, I’m <span>Leandro</span></h1>
             <h3><span>Backend Developer</span></h3>
             <p>
-                Backend Developer focused on building clean, scalable architectures. I rely on JavaScript, Node.js,
-                Express, and MongoDB, and I am actively incorporating NestJS, TypeScript, and PostgreSQL to sharpen that
-                stack. Excited to contribute to teams that value innovation and growth.
+                Backend Developer with experience in Node.js, NestJS, Typescript, Express, MongoDB, and SQL. Focused on designing scalable and maintainable backend architectures, optimize databases, and implement modular and efficient systems. Seeking opportunities to grow in backend or fullstack roles through real projects and continuous learning.
             </p>
-
             <div class="social-icons">
                 <a href="https://linkedin.com/in/leandrotraficante/" target="_blank"><i
                         class="fa-brands fa-linkedin"></i></a>
@@ -185,43 +182,23 @@
         <h2 class="section-title">My <span>Experience</span></h2>
         <div class="experience-container">
             <div class="experience-item">
-                <div class="experience-year">2023 - Present</div>
+                <div class="experience-year">September 2025 - Present</div>
                 <h3>Freelance Developer</h3>
                 <h4>Personal Projects & Learning</h4>
-                <p>Developing personal projects and continuously learning new technologies. Focused on building robust
-                    backend solutions with Node.js, Express, and various databases.</p>
+                <p>Building enterprise-level backend systems with NestJS and TypeScript. Developing scalable notification
+                    engines, API integrations, and robust backend services. Focused on implementing resilience patterns,
+                    event-driven architectures, multi-tenant systems, and comprehensive API documentation.</p>
                 <div class="experience-tech">
-                    <span>Node.js</span>
-                    <span>Express</span>
-                    <span>MySQL</span>
+                    <span>NestJS</span>
+                    <span>TypeScript</span>
+                    <span>PostgreSQL</span>
                     <span>MongoDB</span>
-                </div>
-            </div>
-            <div class="experience-item">
-                <div class="experience-year">2024 - Present</div>
-                <h3>Student Developer</h3>
-                <h4>FullStack Jr - UTN</h4>
-                <p>Currently studying Full Stack development with focus on HTML, CSS, JavaScript, React, Node.js, and
-                    MongoDB. Building comprehensive web applications and expanding backend knowledge.</p>
-                <div class="experience-tech">
-                    <span>HTML/CSS</span>
-                    <span>JavaScript</span>
-                    <span>React</span>
-                    <span>MongoDB</span>
+                    <span>Redis</span>
                     <span>Node.js</span>
-                </div>
-            </div>
-            <div class="experience-item">
-                <div class="experience-year">2023 - 2024</div>
-                <h3>Student Developer</h3>
-                <h4>Coderhouse Bootcamp</h4>
-                <p>Intensive learning period focused on backend development fundamentals. Completed multiple projects
-                    and obtained certifications in JavaScript, SQL, and Backend Development.</p>
-                <div class="experience-tech">
-                    <span>JavaScript</span>
-                    <span>SQL</span>
-                    <span>Backend</span>
-                    <span>APIs</span>
+                    <span>Express.js</span>
+                    <span>JWT</span>
+                    <span>Cockatiel</span>
+                    <span>Swagger</span>
                 </div>
             </div>
         </div>
@@ -230,6 +207,38 @@
     <section id="projects" class="projects">
         <h2 class="section-title">My <span>Projects</span></h2>
         <div class="projects-container">
+
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="./notif.webp" class="api-image" alt="Smart Event-Driven Notification Engine">
+                </div>
+                <div class="project-content">
+                    <h3>Smart Event-Driven Notification Engine</h3>
+                    <p>Generic, tenant-isolated notification engine built with NestJS and TypeScript for last-minute
+                        availability and opportunity events. Features multi-tenant architecture with PostgreSQL, event-driven
+                        processing pipeline, and asynchronous notification delivery using Redis + BullMQ with DLQ and retry
+                        policies. Implements hierarchical tag-based matching, resilience patterns with Cockatiel, idempotent
+                        delivery, and multi-channel support (Email/Push/WhatsApp) with extensible provider adapters.</p>
+                    <div class="project-tech">
+                        <span>NestJS</span>
+                        <span>TypeScript</span>
+                        <span>PostgreSQL</span>
+                        <span>Redis</span>
+                        <span>BullMQ</span>
+                        <span>JWT</span>
+                        <span>Cockatiel</span>
+                        <span>Pino</span>
+                        <span>Swagger</span>
+                        <span>Docker Compose</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small in-progress-btn"
+                            style="opacity: 0.6; cursor: not-allowed; pointer-events: none;">
+                            <i class="fas fa-hard-hat"></i> In Progress
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             <div class="project-item">
                 <div class="project-image">
@@ -287,7 +296,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-item">
+            <!-- <div class="project-item">
                 <div class="project-image">
                     <img src="./electroshop-ecommerce.png" alt="ElectroShop E-commerce">
                 </div>
@@ -319,30 +328,7 @@
                             class="btn btn-small btn-secondary">View Code</a>
                     </div>
                 </div>
-            </div>
-            <div class="project-item">
-                <div class="project-image">
-                    <img src="./API_books.png" class="api-image" alt="Biblioteca API Code">
-                </div>
-                <div class="project-content">
-                    <h3>Personal Library API</h3>
-                    <p>Complete REST API backend for personal library management with full CRUD operations, advanced
-                        search filters, pagination, and MongoDB integration using Mongoose. Features include Google
-                        Books integration for importing titles, smart duplication control via <code>googleId</code>,
-                        rating system (0-5), genre filtering, reading status tracking, and comprehensive validation.</p>
-                    <div class="project-tech">
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>MongoDB</span>
-                        <span>Mongoose</span>
-                        <span>Google Books API</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/leandrotraficante/API_Biblioteca_Personal" target="_blank"
-                            class="btn btn-small btn-secondary">View Code</a>
-                    </div>
-                </div>
-            </div>
+            </div> -->
 
         </div>
     </section>
