@@ -108,7 +108,6 @@ const translations = {
         title_experience: 'Experiencia',
         title_projects: 'Proyectos',
         title_contact: 'Contacto',
-        title_contact_prefix: 'Escribime',
         skill_cat_skills: 'Habilidades',
         skill_cat_tools: 'Herramientas',
         skill_cat_languages: 'Idiomas',
@@ -187,7 +186,6 @@ const translations = {
         title_experience: 'Esperienza',
         title_projects: 'Progetti',
         title_contact: 'Contatti',
-        title_contact_prefix: 'Scrivimi',
         skill_cat_skills: 'Competenze',
         skill_cat_tools: 'Strumenti',
         skill_cat_languages: 'Lingue',
@@ -282,7 +280,10 @@ function applyTranslations(lang) {
         else if (id === 'education') el.innerHTML = '<span>' + t.title_education + '</span>';
         else if (id === 'experience') el.innerHTML = '<span>' + t.title_experience + '</span>';
         else if (id === 'projects') el.innerHTML = '<span>' + t.title_projects + '</span>';
-        else if (id === 'contact') el.innerHTML = t.title_contact_prefix + ' <span>' + t.title_contact + '</span>';
+        else if (id === 'contact') {
+            const prefix = t.title_contact_prefix;
+            el.innerHTML = prefix ? prefix + ' <span>' + t.title_contact + '</span>' : '<span>' + t.title_contact + '</span>';
+        }
     });
 }
 
