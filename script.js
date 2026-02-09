@@ -57,24 +57,35 @@ const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section');
 
 // Mobile Menu Toggle
+const menuIcon = menuToggle.querySelector('i');
+function setMenuOpen(open) {
+    document.body.style.overflow = open ? 'hidden' : '';
+}
 menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+    const isOpen = navMenu.classList.toggle('active');
     menuToggle.classList.toggle('active');
+    menuIcon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
+    setMenuOpen(isOpen);
 });
+
+function closeMobileMenu() {
+    navMenu.classList.remove('active');
+    menuToggle.classList.remove('active');
+    if (menuIcon) menuIcon.className = 'fas fa-bars';
+    setMenuOpen(false);
+}
 
 // Close mobile menu when clicking on a link
 navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        menuToggle.classList.remove('active');
-    });
+    link.addEventListener('click', () => closeMobileMenu());
 });
 
-// Close mobile menu when clicking outside
+// Close mobile menu when clicking overlay or outside
+const navOverlay = document.getElementById('nav-overlay');
+if (navOverlay) navOverlay.addEventListener('click', closeMobileMenu);
 document.addEventListener('click', (e) => {
     if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
-        navMenu.classList.remove('active');
-        menuToggle.classList.remove('active');
+        closeMobileMenu();
     }
 });
 

@@ -24,27 +24,30 @@
 
 <body>
     <header>
-        <nav id="nav-menu">
-            <a href="#home" class="nav-link active" data-i18n="nav_about">About</a>
-            <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
-            <a href="#education" class="nav-link" data-i18n="nav_education">Education</a>
-            <a href="#experience" class="nav-link" data-i18n="nav_experience">Experience</a>
-            <a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a>
-            <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
-        </nav>
-        <div class="header-right">
-            <div class="lang-switcher" aria-label="Language">
-                <button type="button" class="lang-btn active" data-lang="en" title="English">EN</button>
-                <button type="button" class="lang-btn" data-lang="es" title="Español">ES</button>
-                <button type="button" class="lang-btn" data-lang="it" title="Italiano">IT</button>
-            </div>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-                <i class="fas fa-moon"></i>
-            </button>
-            <div class="menu-toggle" id="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
+        <div class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
         </div>
+        <nav id="nav-menu">
+            <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active" data-i18n="nav_about">About</a>
+                <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
+                <a href="#education" class="nav-link" data-i18n="nav_education">Education</a>
+                <a href="#experience" class="nav-link" data-i18n="nav_experience">Experience</a>
+                <a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a>
+                <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <div class="lang-switcher" aria-label="Language">
+                    <button type="button" class="lang-btn active" data-lang="en" title="English">EN</button>
+                    <button type="button" class="lang-btn" data-lang="es" title="Español">ES</button>
+                    <button type="button" class="lang-btn" data-lang="it" title="Italiano">IT</button>
+                </div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
     </header>
 
     <section id="home" class="home">
