@@ -4,11 +4,11 @@
     /* Light Theme – #ffee94, #a4624a, #e6c594 (y derivados). */
     --cream: #ffee94;              /* base crema */
     --terracotta: #a4624a;        /* base terracotta */
-    --gold: #e6c594;              /* acento dorado suave – títulos de sección */
+    --gold: #ebb768;              /* acento dorado suave – títulos de sección */
     --primary-color: #5c3a2e;     /* terracotta oscuro – títulos, texto */
     --secondary-color: #fef5d4;   /* derivado crema – chips, fondos */
     --accent-color: #a4624a;      /* terracotta – botones, enlaces */
-    --accent-gold: #e6c594;       /* dorado beige – solo títulos de sección */
+    --accent-gold: #ebb768;       /* dorado beige – solo títulos de sección */
     --light-bg: #fffcf5;          /* derivado crema – fondo general */
     --dark-shadow: #5c3a2e;      /* terracotta oscuro – footer */
     --dark-accent: #7d4f3b;      /* terracotta medio – hovers */
