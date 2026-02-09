@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root {
-    /* Light Theme – #ffee94, #a4624a, #e6c594 (y derivados). */
-    --cream: #ffee94;              /* base crema */
-    --terracotta: #a4624a;        /* base terracotta */
-    --gold: #ebb768;              /* acento dorado suave – títulos de sección */
-    --primary-color: #5c3a2e;     /* terracotta oscuro – títulos, texto */
-    --secondary-color: #fef5d4;   /* derivado crema – chips, fondos */
-    --accent-color: #a4624a;      /* terracotta – botones, enlaces */
-    --accent-gold: #ebb768;       /* dorado beige – solo títulos de sección */
-    --light-bg: #fffcf5;          /* derivado crema – fondo general */
-    --dark-shadow: #5c3a2e;      /* terracotta oscuro – footer */
-    --dark-accent: #7d4f3b;      /* terracotta medio – hovers */
-    --text-light: #fffefb;
-    --text-dark: #5c3a2e;
-    --card-bg: #fefdf8;           /* blanco crema */
-    --border-color: #ecd4a8;     /* borde crema/beige */
-    --shadow-color: rgba(164, 98, 74, 0.08);
+    /* Light Theme – más rojizo: terracotta, rojos suaves, beiges. */
+    --cream: #faf6f2;             /* base crema */
+    --terracotta: #c47262;        /* rojo terracotta – acentos */
+    --gold: #d49080;              /* rojo-beige – títulos de sección */
+    --primary-color: #6b4540;     /* marrón rojizo – títulos, texto */
+    --secondary-color: #f8eee8;   /* beige rojizo pastel – chips */
+    --accent-color: #c47262;     /* rojo terracotta – botones, enlaces */
+    --accent-gold: #d49080;      /* rojo-beige – títulos */
+    --light-bg: #fefaf8;          /* fondo blanco crema rojizo */
+    --dark-shadow: #6b4540;
+    --dark-accent: #b05a4e;      /* rojo más intenso – hovers */
+    --text-light: #fffdfb;
+    --text-dark: #6b4540;
+    --card-bg: #fcf6f4;           /* blanco crema con toque rojizo */
+    --border-color: #e8d4d0;     /* borde beige/rojizo pastel */
+    --shadow-color: rgba(196, 114, 98, 0.14);
+    /* Extra para variación */
+    --mint-soft: #f5e8e4;         /* beige rojizo muy claro */
+    --earth-warm: #f0ddd8;        /* beige-rojo cálido */
+    --section-alt: #fef8f6;       /* fondo alternativo crema rojizo */
 }
 
 /* Dark Theme Variables */
@@ -32,6 +36,7 @@
     --card-bg: #313244;
     --border-color: #45475a;
     --shadow-color: rgba(0, 0, 0, 0.3);
+    --section-alt: #36364a;
 }
 
 *{
@@ -341,7 +346,7 @@ section{
 
 /* Skills Section */
 .skills {
-    background-color: var(--card-bg);
+    background-color: var(--light-bg);
 }
 
 .skills-container {
@@ -581,7 +586,7 @@ section{
 
 /* Projects Section */
 .projects {
-    background-color: var(--card-bg);
+    background-color: var(--section-alt);
 }
 
 .projects-container {
