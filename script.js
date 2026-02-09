@@ -55,7 +55,6 @@ const menuToggle = document.getElementById('menu-toggle');
 const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section');
-const skillLevels = document.querySelectorAll('.skill-level');
 
 // Mobile Menu Toggle
 menuToggle.addEventListener('click', () => {
@@ -117,19 +116,6 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
-// Intersection Observer for skill animation
-const skillObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const skill = entry.target;
-            const level = skill.getAttribute('data-level');
-            skill.style.setProperty('--skill-width', `${level}%`);
-        }
-    });
-}, { threshold: 0.5 });
-
-skillLevels.forEach(skill => skillObserver.observe(skill));
 
 // Scroll reveal animation for sections
 const revealSection = (entries, observer) => {
@@ -203,13 +189,16 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Initialize tooltips for skill items
+// Initialize tooltips for skill items (only if skill-level bar exists)
 const skillItems = document.querySelectorAll('.skill-item');
 skillItems.forEach(item => {
-    item.addEventListener('mouseenter', () => {
-        const level = item.querySelector('.skill-level').getAttribute('data-level');
-        item.setAttribute('title', `${level}% proficiency`);
-    });
+    const levelEl = item.querySelector('.skill-level');
+    if (levelEl) {
+        item.addEventListener('mouseenter', () => {
+            const level = levelEl.getAttribute('data-level');
+            if (level) item.setAttribute('title', `${level}% proficiency`);
+        });
+    }
 });
 
 // Enhanced Scroll to Top functionality
@@ -284,12 +273,4 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         document.body.style.opacity = '1';
     }, 100);
-    
-    // Initialize skill levels
-    skillLevels.forEach(skill => {
-        const level = skill.getAttribute('data-level');
-        skill.style.setProperty('--skill-width', '0%');
-    });
-    
-    console.log('Portfolio website initialized successfully!');
 });

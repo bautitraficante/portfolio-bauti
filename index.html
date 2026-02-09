@@ -5,407 +5,318 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Leandro Traficante - Backend Developer Portfolio. Specialized in Node.js, Express, MySQL, and MongoDB. Based in Buenos Aires, Argentina.">
+        content="Bautista Traficante - Digital Marketer. Social media, content creation, video editing, branding, and influencer marketing. Based in Italy.">
     <meta name="keywords"
-        content="Backend Developer, Node.js, Express, MySQL, MongoDB, JavaScript, Argentina, Portfolio">
-    <meta name="author" content="Leandro Traficante">
+        content="Digital Marketer, Social Media, Content Strategy, Branding, Influencer Marketing, Canva, Meta Ads, Google Ads, Portfolio">
+    <meta name="author" content="Bautista Traficante">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Leandro Traficante - Backend Developer Portfolio">
-    <meta property="og:description" content="Backend Developer specialized in Node.js, Express, MySQL, and MongoDB">
+    <meta property="og:title" content="Bautista Traficante - Digital Marketer Portfolio">
+    <meta property="og:description" content="Digital Marketer specialized in social media, content creation, and branding.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://leandrotraficante.github.io">
+    <!-- Replace with your live URL when deploying -->
+    <meta property="og:url" content="https://your-portfolio-url.com#home">
     <link rel="icon" type="image/x-icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Leandro Traficante - Backend Developer Portfolio</title>
+    <title>Bautista Traficante - Digital Marketer Portfolio</title>
 </head>
 
 <body>
     <header>
-        <a href="https://leandrotraficante.github.io" class="logo">Leandro Traficante</a>
-
-        <!-- Dark Mode Toggle -->
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-            <i class="fas fa-moon"></i>
-        </button>
-
-        <div class="menu-toggle" id="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-
         <nav id="nav-menu">
-            <a href="#home" class="nav-link active">About Me</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#education" class="nav-link">Education</a>
-            <a href="#experience" class="nav-link">Experience</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#home" class="nav-link active" data-i18n="nav_about">About</a>
+            <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
+            <a href="#education" class="nav-link" data-i18n="nav_education">Education</a>
+            <a href="#experience" class="nav-link" data-i18n="nav_experience">Experience</a>
+            <a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a>
+            <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
         </nav>
+        <div class="header-right">
+            <div class="lang-switcher" aria-label="Language">
+                <button type="button" class="lang-btn active" data-lang="en" title="English">EN</button>
+                <button type="button" class="lang-btn" data-lang="es" title="Español">ES</button>
+                <button type="button" class="lang-btn" data-lang="it" title="Italiano">IT</button>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
 
     <section id="home" class="home">
         <div class="home-img">
-            <img src="LT.png" alt="Leandro Traficante Profile">
+            <img src="bautitrafi.jpeg" alt="Bautista Traficante profile">
         </div>
         <div class="home-content">
-            <h1>Hi, I’m <span>Leandro</span></h1>
-            <h3><span>Backend Developer</span></h3>
-            <p>
-                Backend Developer with experience in Node.js, NestJS, TypeScript, Express, MongoDB, and PostgreSQL. 
-                Specialized in building scalable, well-organized backend architectures with clean code practices, 
-                modular design patterns, and maintainable systems. I prioritize robust database schemas, efficient 
-                API designs, performance optimization, and following best practices to create enterprise-level solutions. 
-                Open to new challenges and opportunities.
-            </p>
+            <h1><span data-i18n="hero_greeting">Hi, I'm</span> <span>Bautista</span></h1>
+            <h3><span data-i18n="hero_role">Digital Marketer</span></h3>
+            <p data-i18n="hero_bio">Digital Marketer with experience in social media, content creation, video editing (TikTok, Reels, Shorts), and branding. I plan and produce content that aligns with brand identity, manage editorial calendars, and collaborate with brands and influencers. Fluent in Spanish, English, and Italian. Open to new challenges and opportunities.</p>
             <div class="social-icons">
-                <a href="https://linkedin.com/in/leandrotraficante/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/leandrotraficante" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div <div class="btn-group">
-            <a href="#contact" class="btn">Contact Me</a>
-            <a href="https://drive.google.com/file/d/1w4wvYuAjJTHKYatUTF1JeY1d25Xdkf5e/view?usp=sharing"
-                class="btn btn-secondary" target="_blank">Download CV</a>
+                <a href="https://linkedin.com/in/bautistatraficante" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="btn-group">
+            <a href="#contact" class="btn" data-i18n="btn_contact">Contact Me</a>
+            <a href="https://drive.google.com/file/d/1hCRc1owhp8sxIG8mr_kstM0C8QSr0G8o/view?usp=sharing" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" data-i18n="btn_cv">Download CV</a>
         </div>
         </div>
     </section>
 
     <section id="skills" class="skills">
-        <h2 class="section-title">My <span>Skills</span></h2>
+        <h2 class="section-title"><span>Skills</span></h2>
         <div class="skills-container">
             <div class="skill-category">
-                <h3>Programming Languages</h3>
+                <h3 data-i18n="skill_cat_skills">Skills</h3>
                 <div class="skill-items">
-                    <div class="skill-item">
-                        <i class="fab fa-js"></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="typescript-icon-wrapper">
-                            <svg class="typescript-icon" fill="none" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><rect fill="currentColor" height="512" rx="50" width="512"/><path clip-rule="evenodd" d="m316.939 407.424v50.061c8.138 4.172 17.763 7.3 28.875 9.386s22.823 3.129 35.135 3.129c11.999 0 23.397-1.147 34.196-3.442 10.799-2.294 20.268-6.075 28.406-11.342 8.138-5.266 14.581-12.15 19.328-20.65s7.121-19.007 7.121-31.522c0-9.074-1.356-17.026-4.069-23.857s-6.625-12.906-11.738-18.225c-5.112-5.319-11.242-10.091-18.389-14.315s-15.207-8.213-24.18-11.967c-6.573-2.712-12.468-5.345-17.685-7.9-5.217-2.556-9.651-5.163-13.303-7.822-3.652-2.66-6.469-5.476-8.451-8.448-1.982-2.973-2.974-6.336-2.974-10.091 0-3.441.887-6.544 2.661-9.308s4.278-5.136 7.512-7.118c3.235-1.981 7.199-3.52 11.894-4.615 4.696-1.095 9.912-1.642 15.651-1.642 4.173 0 8.581.313 13.224.938 4.643.626 9.312 1.591 14.008 2.894 4.695 1.304 9.259 2.947 13.694 4.928 4.434 1.982 8.529 4.276 12.285 6.884v-46.776c-7.616-2.92-15.937-5.084-24.962-6.492s-19.381-2.112-31.066-2.112c-11.895 0-23.163 1.278-33.805 3.833s-20.006 6.544-28.093 11.967c-8.086 5.424-14.476 12.333-19.171 20.729-4.695 8.395-7.043 18.433-7.043 30.114 0 14.914 4.304 27.638 12.912 38.172 8.607 10.533 21.675 19.45 39.204 26.751 6.886 2.816 13.303 5.579 19.25 8.291s11.086 5.528 15.415 8.448c4.33 2.92 7.747 6.101 10.252 9.543 2.504 3.441 3.756 7.352 3.756 11.733 0 3.233-.783 6.231-2.348 8.995s-3.939 5.162-7.121 7.196-7.147 3.624-11.894 4.771c-4.748 1.148-10.303 1.721-16.668 1.721-10.851 0-21.597-1.903-32.24-5.71-10.642-3.806-20.502-9.516-29.579-17.13zm-84.159-123.342h64.22v-41.082h-179v41.082h63.906v182.918h50.874z" fill="var(--light-bg)" fill-rule="evenodd"/></svg>
-                        </div>
-                        <span>TypeScript</span>
-                    </div>
+                    <div class="skill-item"><i class="fas fa-lightbulb"></i><span data-i18n="skill_creativity">Creativity</span></div>
+                    <div class="skill-item"><i class="fas fa-comments"></i><span data-i18n="skill_communication">Effective Communication</span></div>
+                    <div class="skill-item"><i class="fas fa-chart-line"></i><span data-i18n="skill_analytical">Analytical Thinking</span></div>
+                    <div class="skill-item"><i class="fas fa-book-open"></i><span data-i18n="skill_storytelling">Storytelling</span></div>
+                    <div class="skill-item"><i class="fas fa-users"></i><span data-i18n="skill_teamwork">Teamwork</span></div>
+                    <div class="skill-item"><i class="fas fa-clock"></i><span data-i18n="skill_time">Time Management</span></div>
+                    <div class="skill-item"><i class="fas fa-puzzle-piece"></i><span data-i18n="skill_problem">Problem Solving</span></div>
                 </div>
             </div>
             <div class="skill-category">
-                <h3>Backend Technologies</h3>
+                <h3 data-i18n="skill_cat_tools">Tools</h3>
                 <div class="skill-items">
-                    <div class="skill-item">
-                        <i class="fab fa-node-js"></i>
-                        <span>Node.js</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-server"></i>
-                        <span>Express.js</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="nestjs-icon-wrapper">
-                            <svg class="nestjs-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" role="img"><title>NestJS icon</title><path d="M14.131.047c-.173 0-.334.037-.483.087.316.21.49.49.576.806.007.043.019.074.025.117a.681.681 0 0 1 .013.112c.024.545-.143.614-.26.936-.18.415-.13.861.086 1.22a.74.74 0 0 0 .074.137c-.235-1.568 1.073-1.803 1.314-2.293.019-.428-.334-.713-.613-.911a1.37 1.37 0 0 0-.732-.21zM16.102.4c-.024.143-.006.106-.012.18-.006.05-.006.112-.012.161-.013.05-.025.1-.044.149-.012.05-.03.1-.05.149l-.067.142c-.02.025-.031.05-.05.075l-.037.055a2.152 2.152 0 0 1-.093.124c-.037.038-.068.081-.112.112v.006c-.037.031-.074.068-.118.1-.13.099-.278.173-.415.266-.043.03-.087.056-.124.093a.906.906 0 0 0-.118.099c-.043.037-.074.074-.111.118-.031.037-.068.08-.093.124a1.582 1.582 0 0 0-.087.13c-.025.05-.043.093-.068.142-.019.05-.037.093-.05.143a2.007 2.007 0 0 0-.043.155c-.006.025-.006.056-.012.08-.007.025-.007.05-.013.075 0 .05-.006.105-.006.155 0 .037 0 .074.006.111 0 .05.006.1.019.155.006.05.018.1.03.15.02.049.032.098.05.148.013.03.031.062.044.087l-1.426-.552c-.241-.068-.477-.13-.719-.186l-.39-.093c-.372-.074-.75-.13-1.128-.167-.013 0-.019-.006-.031-.006A11.082 11.082 0 0 0 8.9 2.855c-.378.025-.756.074-1.134.136a12.45 12.45 0 0 0-.837.174l-.279.074c-.092.037-.18.08-.266.118l-.205.093c-.012.006-.024.006-.03.012-.063.031-.118.056-.174.087a2.738 2.738 0 0 0-.236.118c-.043.018-.086.043-.124.062a.559.559 0 0 1-.055.03c-.056.032-.112.063-.162.094a1.56 1.56 0 0 0-.148.093c-.044.03-.087.055-.124.086-.006.007-.013.007-.019.013-.037.025-.08.056-.118.087l-.012.012-.093.074c-.012.007-.025.019-.037.025-.031.025-.062.056-.093.08-.006.013-.019.02-.025.025-.037.038-.074.069-.111.106-.007 0-.007.006-.013.012a1.742 1.742 0 0 0-.111.106c-.007.006-.007.012-.013.012a1.454 1.454 0 0 0-.093.1c-.012.012-.03.024-.043.036a1.374 1.374 0 0 1-.106.112c-.006.012-.018.019-.024.03-.05.05-.093.1-.143.15l-.018.018c-.1.106-.205.211-.317.304-.111.1-.229.192-.347.273a3.777 3.777 0 0 1-.762.421c-.13.056-.267.106-.403.149-.26.056-.527.161-.756.18-.05 0-.105.012-.155.018l-.155.037-.149.056c-.05.019-.099.044-.148.068-.044.031-.093.056-.137.087a1.011 1.011 0 0 0-.124.106c-.043.03-.087.074-.124.111-.037.043-.074.08-.105.124-.031.05-.068.093-.093.143a1.092 1.092 0 0 0-.087.142c-.025.056-.05.106-.068.161-.019.05-.037.106-.056.161-.012.05-.025.1-.03.15 0 .005-.007.012-.007.018-.012.056-.012.13-.019.167C.006 7.95 0 7.986 0 8.03a.657.657 0 0 0 .074.31v.006c.019.037.044.075.069.112.024.037.05.074.08.111.031.031.068.069.106.1a.906.906 0 0 0 .117.099c.149.13.186.173.378.272.031.019.062.031.1.05.006 0 .012.006.018.006 0 .013 0 .019.006.031a1.272 1.272 0 0 0 .08.298c.02.037.032.074.05.111.007.013.013.025.02.031.024.05.049.093.073.137l.093.13c.031.037.069.08.106.118.037.037.074.068.118.105 0 0 .006.006.012.006.037.031.074.062.112.087a.986.986 0 0 0 .136.08c.043.025.093.05.142.069a.73.73 0 0 0 .124.043c.007.006.013.006.025.012.025.007.056.013.08.019-.018.335-.024.65.026.762.055.124.328-.254.6-.688-.036.428-.061.93 0 1.079.069.155.44-.329.763-.862 4.395-1.016 8.405 2.02 8.826 6.31-.08-.67-.905-1.041-1.283-.948-.186.458-.502 1.047-1.01 1.413.043-.41.025-.83-.062-1.24a4.009 4.009 0 0 1-.769 1.562c-.588.043-1.177-.242-1.487-.67-.025-.018-.031-.055-.05-.08-.018-.043-.037-.087-.05-.13a.515.515 0 0 1-.037-.13c-.006-.044-.006-.087-.006-.137v-.093a.992.992 0 0 1 .031-.13c.013-.043.025-.086.044-.13.024-.043.043-.087.074-.13.105-.298.105-.54-.087-.682a.706.706 0 0 0-.118-.062c-.024-.006-.055-.018-.08-.025l-.05-.018a.847.847 0 0 0-.13-.031.472.472 0 0 0-.13-.019 1.01 1.01 0 0 0-.136-.012c-.031 0-.062.006-.093.006a.484.484 0 0 0-.137.019c-.043.006-.086.012-.13.024a1.068 1.068 0 0 0-.13.044c-.043.018-.08.037-.124.056-.037.018-.074.043-.118.062-1.444.942-.582 3.148.403 3.787-.372.068-.75.148-.855.229l-.013.012c.267.161.546.298.837.416.397.13.818.247 1.004.297v.006a5.996 5.996 0 0 0 1.562.112c2.746-.192 4.996-2.281 5.405-5.033l.037.161c.019.112.043.23.056.347v.006c.012.056.018.112.025.162v.024c.006.056.012.112.012.162.006.068.012.136.012.204v.1c0 .03.007.067.007.098 0 .038-.007.075-.007.112v.087c0 .043-.006.08-.006.124 0 .025 0 .05-.006.08 0 .044-.006.087-.006.137-.006.018-.006.037-.006.055l-.02.143c0 .019 0 .037-.005.056-.007.062-.019.118-.025.18v.012l-.037.174v.018l-.037.167c0 .007-.007.02-.007.025a1.663 1.663 0 0 1-.043.168v.018c-.019.062-.037.118-.05.174-.006.006-.006.012-.006.012l-.056.186c-.024.062-.043.118-.068.18-.025.062-.043.124-.068.18-.025.062-.05.117-.074.18h-.007c-.024.055-.05.117-.08.173a.302.302 0 0 1-.019.043c-.006.006-.006.013-.012.019a5.867 5.867 0 0 1-1.742 2.082c-.05.031-.099.069-.149.106-.012.012-.03.018-.043.03a2.603 2.603 0 0 1-.136.094l.018.037h.007l.26-.037h.006c.161-.025.322-.056.483-.087.044-.006.093-.019.137-.031l.087-.019c.043-.006.086-.018.13-.024.037-.013.074-.02.111-.031.62-.15 1.221-.354 1.798-.595a9.926 9.926 0 0 1-3.85 3.142c.714-.05 1.426-.167 2.114-.366a9.903 9.903 0 0 0 5.857-4.68 9.893 9.893 0 0 1-1.667 3.986 9.758 9.758 0 0 0 1.655-1.376 9.824 9.824 0 0 0 2.61-5.268c.21.98.272 1.99.18 2.987 4.474-6.241.371-12.712-1.346-14.416-.006-.013-.012-.019-.012-.031-.006.006-.006.006-.006.012 0-.006 0-.006-.007-.012 0 .074-.006.148-.012.223a8.34 8.34 0 0 1-.062.415c-.03.136-.068.273-.105.41-.044.13-.093.266-.15.396a5.322 5.322 0 0 1-.185.378 4.735 4.735 0 0 1-.477.688c-.093.111-.192.21-.292.31a3.994 3.994 0 0 1-.18.155l-.142.124a3.459 3.459 0 0 1-.347.241 4.295 4.295 0 0 1-.366.211c-.13.062-.26.118-.39.174a4.364 4.364 0 0 1-.818.223c-.143.025-.285.037-.422.05a4.914 4.914 0 0 1-.297.012 4.66 4.66 0 0 1-.422-.025 3.137 3.137 0 0 1-.421-.062 3.136 3.136 0 0 1-.415-.105h-.007c.137-.013.273-.025.41-.05a4.493 4.493 0 0 0 .818-.223c.136-.05.266-.112.39-.174.13-.062.248-.13.372-.204.118-.08.235-.161.347-.248.112-.087.217-.18.316-.279.105-.093.198-.198.291-.304.093-.111.18-.223.26-.334.013-.019.026-.044.038-.062.062-.1.124-.199.18-.298a4.272 4.272 0 0 0 .334-.775c.044-.13.075-.266.106-.403.025-.142.05-.278.062-.415.012-.142.025-.285.025-.421 0-.1-.007-.199-.013-.298a6.726 6.726 0 0 0-.05-.415 4.493 4.493 0 0 0-.092-.415c-.044-.13-.087-.267-.137-.397-.05-.13-.111-.26-.173-.384-.069-.124-.137-.248-.211-.366a6.843 6.843 0 0 0-.248-.34c-.093-.106-.186-.212-.285-.317a3.878 3.878 0 0 0-.161-.155c-.28-.217-.57-.421-.862-.607a1.154 1.154 0 0 0-.124-.062 2.415 2.415 0 0 0-.589-.26Z"/></svg>
-                        </div>
-                        <span>NestJS</span>
-                    </div>
+                    <div class="skill-item"><i class="fas fa-palette"></i><span>Photoshop</span></div>
+                    <div class="skill-item"><i class="fas fa-pen-fancy"></i><span>Adobe Illustrator</span></div>
+                    <div class="skill-item"><i class="fas fa-palette"></i><span>Canva</span></div>
+                    <div class="skill-item"><i class="fas fa-search"></i><span>Google Ads</span></div>
+                    <div class="skill-item"><i class="fab fa-facebook"></i><span>Meta Ads</span></div>
                 </div>
             </div>
             <div class="skill-category">
-                <h3>Databases</h3>
+                <h3 data-i18n="skill_cat_languages">Languages</h3>
                 <div class="skill-items">
-                    <div class="skill-item">
-                        <i class="fas fa-database"></i>
-                        <span>MongoDB</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-database"></i>
-                        <span>PostgreSQL</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-database"></i>
-                        <span>MySQL</span>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3>Tools & Technologies</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <i class="fab fa-git-alt"></i>
-                        <span>Git & GitHub</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-code"></i>
-                        <span>VS Code & CursorAI</span>
-                    </div>
+                    <div class="skill-item"><i class="fas fa-language"></i><span data-i18n="skill_spanish">Spanish (Native)</span></div>
+                    <div class="skill-item"><i class="fas fa-language"></i><span data-i18n="skill_english">English (Advanced)</span></div>
+                    <div class="skill-item"><i class="fas fa-language"></i><span data-i18n="skill_italian">Italian (Advanced)</span></div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="education" class="education">
-        <h2 class="section-title">My <span>Education</span></h2>
+        <h2 class="section-title"><span>Education</span></h2>
         <div class="education-container">
             <div class="education-item">
                 <div class="education-content">
-                    <div class="education-year">Currently studying</div>
-                    <h3>University Technical Degree in Programming</h3>
-                    <h4>Universidad Tecnológica Nacional (UTN)</h4>
-                    <p>Technical degree focused on software programming and system development. Covers implementation and development of applications using various programming languages, methodologies, and technologies. Emphasizes collaborative work in development teams and technical documentation.</p>
+                    <div class="education-year" data-i18n="edu1_year">In progress</div>
+                    <h3 data-i18n="edu1_title">Data Science Degree</h3>
+                    <h4 data-i18n="edu1_place">Universidad Siglo 21</h4>
+                    <p data-i18n="edu1_desc">Bachelor's degree in Data Science.</p>
                 </div>
             </div>
             <div class="education-item">
                 <div class="education-content">
-                    <div class="education-year">2024 - 2025</div>
-                    <h3>Full Stack Junior</h3>
-                    <h4>Universidad Tecnológica Nacional (UTN)</h4>
-                    <p>Full Stack development course with focus on HTML, CSS, JavaScript, React, Node.js,
-                        and MongoDB.</p>
+                    <div class="education-year" data-i18n="edu2_year">2025</div>
+                    <h3 data-i18n="edu2_title">Professional Certificate in Digital Marketing and E-commerce</h3>
+                    <h4 data-i18n="edu2_place">Google</h4>
+                    <p data-i18n="edu2_desc">Certification covering digital marketing fundamentals and e-commerce.</p>
                 </div>
             </div>
             <div class="education-item">
                 <div class="education-content">
-                    <div class="education-year">Feb 2023 - Feb 2024</div>
-                    <h3>Backend Development Bootcamp</h3>
-                    <h4>Coderhouse</h4>
-                    <p>Intensive program covering JavaScript, SQL (MySQL), MongoDB and Node.js. Obtained Backend
-                        Developer
-                        certification.</p>
+                    <div class="education-year" data-i18n="edu3_year">July 2023 – April 2024</div>
+                    <h3 data-i18n="edu3_title">Digital Marketing Program</h3>
+                    <h4 data-i18n="edu3_place">Coderhouse</h4>
+                    <p data-i18n="edu3_desc">Full program including Growth Marketing, Advanced Social Media Advertising, and Community Management & Advertising.</p>
                 </div>
             </div>
             <div class="education-item">
                 <div class="education-content">
-                    <div class="education-year">2023</div>
-                    <h3>JavaScript & SQL Certifications</h3>
-                    <h4>Coderhouse</h4>
-                    <p>Completed specialized courses in JavaScript and SQL (MySQL) with practical projects and
-                        assessments.</p>
+                    <div class="education-year" data-i18n="edu4_year">2008 – 2019</div>
+                    <h3 data-i18n="edu4_title">Communication High School Diploma</h3>
+                    <h4 data-i18n="edu4_place">Learning Proyecto Integral</h4>
+                    <p data-i18n="edu4_desc">IGCSE certifications in English as First Language, Art & Design, Literature, Business, Spanish, Environmental Management, Mathematics. First Certificate in English.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="experience" class="experience">
-        <h2 class="section-title">My <span>Experience</span></h2>
+        <h2 class="section-title"><span>Experience</span></h2>
         <div class="experience-container">
             <div class="experience-item">
-                <div class="experience-year">September 2025 - Present</div>
-                <h3>Freelance Developer</h3>
-                <h4>Personal Projects & Learning</h4>
-                <p>Building enterprise-level backend systems with NestJS and TypeScript. Developing scalable notification
-                    engines, API integrations, and robust backend services. Focused on implementing resilience patterns,
-                    event-driven architectures, multi-tenant systems, and comprehensive API documentation.</p>
+                <div class="experience-year" data-i18n="exp1_year">2023 – Present</div>
+                <h3 data-i18n="exp1_title">Freelance Digital Marketing</h3>
+                <h4 data-i18n="exp1_company">Self-employed</h4>
+                <p data-i18n="exp1_desc">Planning, creating, and managing social media content with a strategic focus on visual, editorial, and brand consistency. Video editing for TikTok, YouTube Shorts, and Reels. Design of graphics and posters. End-to-end creative projects from briefs: context analysis, concept, visual execution, and delivery. Involvement in branding (visual style and tone). Corporate presentations. Collaboration with brands and influencers for authentic, goal-oriented content.</p>
                 <div class="experience-tech">
-                    <span>NestJS</span>
-                    <span>TypeScript</span>
-                    <span>PostgreSQL</span>
-                    <span>MongoDB</span>
-                    <span>Redis</span>
-                    <span>Node.js</span>
-                    <span>Express.js</span>
-                    <span>JWT</span>
-                    <span>Cockatiel</span>
-                    <span>Swagger</span>
+                    <span>Content</span><span>Social Media</span><span>Video Editing</span><span>Branding</span><span>Canva</span>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-year" data-i18n="exp2_year">2025 – Present</div>
+                <h3 data-i18n="exp2_title">Content & Social Media Specialist</h3>
+                <h4 data-i18n="exp2_company">SANTAVAL Studio</h4>
+                <p data-i18n="exp2_desc">Development and execution of multilingual editorial calendars (Spanish and English) for digital platforms. Sophisticated, persuasive copywriting aligned with each brand's voice. Community management and audience engagement. Organic digital campaigns and performance reporting. Monthly content planning with themes and objectives. Scripts and copy for creative pieces. Analytical reports with insights and recommendations.</p>
+                <div class="experience-tech">
+                    <span>Copywriting</span><span>Editorial Calendars</span><span>Community Management</span><span>Analytics</span>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-year" data-i18n="exp3_year">2024 – 2025</div>
+                <h3 data-i18n="exp3_title">Social Media Manager</h3>
+                <h4 data-i18n="exp3_company">Genova Hockey 1980</h4>
+                <p data-i18n="exp3_desc">Design and implementation of the club's digital communication strategy to increase brand recognition, audience engagement, and online community growth. Visual and written content for each platform (static and dynamic) with Canva and Photoshop. Editorial calendar and publication flow. Monitoring and analysis of KPIs to evaluate organic results and optimize strategy.</p>
+                <div class="experience-tech">
+                    <span>Social Media</span><span>Canva</span><span>Photoshop</span><span>KPIs</span>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-year" data-i18n="exp4_year">2024</div>
+                <h3 data-i18n="exp4_title">Influencer Marketing</h3>
+                <h4 data-i18n="exp4_company">B-Key Media | TikTok Ecommerce Agency</h4>
+                <p data-i18n="exp4_desc">Influencer sourcing and selection for awareness and performance campaigns in beauty, fitness, fashion, and other sectors. Profile and audience evaluation for strategic alignment. End-to-end collaboration management: outreach, negotiation, content coordination, quality and deadlines. Brief adaptation to maximize campaign impact.</p>
+                <div class="experience-tech">
+                    <span>Influencer Marketing</span><span>TikTok</span><span>Campaigns</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="projects" class="projects">
-        <h2 class="section-title">My <span>Projects</span></h2>
+        <h2 class="section-title"><span>Projects</span></h2>
         <div class="projects-container">
 
             <div class="project-item">
                 <div class="project-image">
-                    <img src="./notif.png" class="api-image" alt="Smart Event-Driven Notification Engine">
+                    <img src="./images/ANTO.jpeg" class="api-image" alt="Anto.Dermatologa">
                 </div>
                 <div class="project-content">
-                    <h3>Smart Event-Driven Notification Engine</h3>
-                    <p>Multi-tenant notification system that automatically sends alerts for last-minute availability and
-                        opportunity events. Built with <strong>NestJS</strong> and <strong>TypeScript</strong>, uses <strong>PostgreSQL</strong> for data storage, processes
-                        notifications asynchronously with <strong>Redis</strong> and <strong>BullMQ</strong>, and supports Email, Push, and WhatsApp channels.
-                        Features automatic retry mechanisms, duplicate prevention, resilience patterns, and tenant isolation.</p>
+                    <h3>Anto.Dermatologa</h3>
+                    <p class="project-subtitle" data-i18n="proj1_subtitle">Growth Marketing & Paid Media</p>
+                    <p data-i18n="proj1_desc">End-to-end strategy for a medical personal brand focused on dermatology and aesthetic medicine. Included full-funnel analysis, content reorganization to strengthen professional authority, design of a WhatsApp-based lead capture system, and optimization of Meta Ads campaigns aimed at real consultations. Results: more predictable lead generation, more strategic content, and stronger communication.</p>
                     <div class="project-tech">
-                        <span>NestJS</span>
-                        <span>TypeScript</span>
-                        <span>PostgreSQL</span>
-                        <span>Redis</span>
-                        <span>BullMQ</span>
-                        <span>JWT</span>
-                        <span>Cockatiel</span>
-                        <span>Pino</span>
-                        <span>Swagger</span>
-                        <span>Docker Compose</span>
+                        <span>Meta Ads</span>
+                        <span>Funnel</span>
+                        <span>WhatsApp</span>
+                        <span>Content Strategy</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn btn-small in-progress-btn"
-                            style="opacity: 0.6; cursor: not-allowed; pointer-events: none;">
-                            <i class="fas fa-hard-hat"></i> In Progress
-                        </a>
+                        <a href="https://www.canva.com/design/DAF8JL_i7zw/TSVkhWCHCiSmMHcVSGXAxA/edit" target="_blank" rel="noopener noreferrer" class="btn btn-small" data-i18n="btn_view_project">View Project</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-item">
                 <div class="project-image">
-                    <img src="./search-flight-service.webp" class="api-image" alt="Flights Search Service">
+                    <img src="./images/ALORA.jpeg" class="api-image" alt="Alora">
                 </div>
                 <div class="project-content">
-                    <h3>Flights Search Service</h3>
-                    <p>Backend service for flight searches built with <strong>NestJS</strong> and <strong>TypeScript</strong>. Integrates with <strong>Amadeus API</strong> for
-                        real-time flight data, uses <strong>Redis</strong> caching for faster repeated searches, and implements resilience
-                        patterns with automatic retries and circuit breakers. Includes <strong>OAuth2</strong> authentication, structured
-                        logging with <strong>Winston</strong>, and modular architecture.</p>
+                    <h3>Alora</h3>
+                    <p class="project-subtitle" data-i18n="proj2_subtitle">Brand Strategy & Storytelling</p>
+                    <p data-i18n="proj2_desc">Creation and launch of a capsule brand with an aspirational DNA. I developed the brand concept, storytelling, tone of voice, and content pillars for social media. The work included creative direction, definition of the visual universe, and a strategy to communicate through emotions, aspirations, and the target audience’s lifestyle.</p>
                     <div class="project-tech">
-                        <span>NestJS</span>
-                        <span>TypeScript</span>
-                        <span>Redis</span>
-                        <span>Amadeus API</span>
-                        <span>Cockatiel</span>
-                        <span>Winston</span>
-                        <span>MVC</span>
-                        <span>OAuth2</span>
+                        <span>Brand Strategy</span>
+                        <span>Storytelling</span>
+                        <span>Creative Direction</span>
+                        <span>Content Pillars</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/leandrotraficante/flight-search-service" target="_blank"
-                            class="btn btn-small btn-secondary">View Code</a>
-                        <a href="https://flight-search-service-hlt3.onrender.com/" target="_blank"
-                            class="btn btn-small">Live Demo</a>
+                        <a href="https://www.canva.com/design/DAGymrGj-Gw/qwzl-gUlfDIDlSmNYS25yQ/edit" target="_blank" rel="noopener noreferrer" class="btn btn-small" data-i18n="btn_view_project">View Project</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-item">
                 <div class="project-image">
-                    <img src="./calendario-medico-mutual-medica.png" alt="Turnos Médicos">
+                    <img src="./images/SANTAVAL.jpeg" class="api-image" alt="SANTAVAL Studio">
                 </div>
                 <div class="project-content">
-                    <h3>Medical Appointments System</h3>
-                    <p>Medical appointments management system built with <strong>Node.js</strong> and <strong>Express</strong>. Features <strong>JWT</strong> authentication,
-                        role-based access control (Admin, Doctor, Patient), appointment scheduling, doctor-patient
-                        management, specialty search, and user management. Uses <strong>MongoDB</strong> for data storage and follows <strong>MVC</strong>
-                        architecture.</p>
+                    <h3>SANTAVAL Studio</h3>
+                    <p class="project-subtitle" data-i18n="proj3_subtitle">Brand Positioning & Communication</p>
+                    <p data-i18n="proj3_desc">Positioning and communication work for a studio focused on premium brands. Included definition of tone, narrative, differentiating values, and editorial content foundations. The focus was on building a coherent, aspirational identity consistent with the studio’s premium style, ensuring clarity and professionalism at every touchpoint.</p>
                     <div class="project-tech">
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>MongoDB</span>
-                        <span>JWT</span>
-                        <span>MVC</span>
+                        <span>Brand Positioning</span>
+                        <span>Editorial</span>
+                        <span>Tone of Voice</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/leandrotraficante/medical-appointments" target="_blank"
-                            class="btn btn-small btn-secondary">View Code</a>
-                        <a href="https://medical-appointments-vx8m.onrender.com/" target="_blank"
-                            class="btn btn-small">Live Demo</a>
-
+                        <a href="https://www.canva.com/design/DAG0pQynF9o/5A--d7M6sj2eAl_BtdZSYQ/edit" target="_blank" rel="noopener noreferrer" class="btn btn-small" data-i18n="btn_view_project">View Project</a>
                     </div>
                 </div>
             </div>
-            <!-- <div class="project-item">
+            <div class="project-item">
                 <div class="project-image">
-                    <img src="./electroshop-ecommerce.png" alt="ElectroShop E-commerce">
+                    <img src="./images/HOKO.jpeg" class="api-image" alt="HOKO Ramen House">
                 </div>
                 <div class="project-content">
-                    <h3>E-commerce Application</h3>
-                    <p>E-commerce application for home appliances with robust backend architecture built on NestJS and
-                        TypeScript.
-                        Features advanced real-time chat system with Socket.IO, comprehensive product management, secure
-                        JWT authentication,
-                        PostgreSQL database with TypeORM integration, and complete API documentation with Swagger.
-                        Implements MVC architecture with enterprise-level security measures and real-time notifications.
-                    </p>
+                    <h3>HOKO Ramen House</h3>
+                    <p class="project-subtitle" data-i18n="proj4_subtitle">Conceptual Digital Marketing Plan</p>
+                    <p data-i18n="proj4_desc">Conceptual development of a digital strategy for a gastronomy brand inspired by Japanese culture. Includes positioning analysis, tone definition, content pillars, creative proposal, and tactical plan for social media, including activation and experience ideas. A project designed to showcase expertise in branding and F&B marketing.</p>
                     <div class="project-tech">
-                        <span>NestJS</span>
-                        <span>TypeScript</span>
-                        <span>PostgreSQL</span>
-                        <span>TypeORM</span>
-                        <span>Socket.IO</span>
-                        <span>JWT</span>
-                        <span>Swagger</span>
-                        <span>MVC</span>
+                        <span>Branding</span>
+                        <span>Marketing Plan</span>
+                        <span>F&B</span>
+                        <span>Social Strategy</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn btn-small in-progress-btn"
-                            style="opacity: 0.6; cursor: not-allowed; pointer-events: none;">
-                            <i class="fas fa-hard-hat"></i> In Progress
-                        </a>
-                        <a href="https://github.com/leandrotraficante/electro-commerce" target="_blank"
-                            class="btn btn-small btn-secondary">View Code</a>
+                        <a href="https://www.behance.net/gallery/233477893/Digital-Marketing-Plan-HOKO-RAMEN-HOUSE" target="_blank" rel="noopener noreferrer" class="btn btn-small" data-i18n="btn_view_behance">View on Behance</a>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <div class="project-item">
                 <div class="project-image">
-                    <img src="./API_books.png" class="api-image" alt="Personal Library API">
+                    <img src="./images/ALTRA.jpeg" class="api-image" alt="ALTRA">
                 </div>
                 <div class="project-content">
-                    <h3>Personal Library API</h3>
-                    <p>REST API for managing a personal book library built with <strong>Node.js</strong> and <strong>Express</strong>. Features complete CRUD
-                        operations with layered architecture, advanced search with combinable filters and pagination. Integrates with <strong>Google Books API</strong>
-                        for importing titles, includes duplicate prevention, rating system (0-5), and reading status tracking. Uses <strong>MongoDB</strong>
-                        with <strong>Mongoose</strong> and follows <strong>MVC</strong> architecture with repository pattern.</p>
+                    <h3>ALTRA</h3>
+                    <p class="project-subtitle" data-i18n="proj5_subtitle">Rebranding & Institutional Communication</p>
+                    <p data-i18n="proj5_desc">Complete overhaul of the visual and verbal identity of a human capital consultancy. I worked on clarifying the value proposition, modernizing the visual presence, improving message consistency, and creating more professional, serious communication aligned with the brand’s corporate profile. A strategic rather than purely aesthetic project, focused on organizing and elevating the brand.</p>
                     <div class="project-tech">
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>MongoDB</span>
-                        <span>Mongoose</span>
-                        <span>Google Books API</span>
-                        <span>MVC</span>
-                        <span>Repository Pattern</span>
+                        <span>Rebranding</span>
+                        <span>Corporate</span>
+                        <span>Value Proposition</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/leandrotraficante/API_Biblioteca_Personal" target="_blank"
-                            class="btn btn-small btn-secondary">View Code</a>
+                        <a href="https://www.canva.com/design/DAHA1u5O4hs/sjBivUQpAL4EsLEmVRf6CA/edit" target="_blank" rel="noopener noreferrer" class="btn btn-small" data-i18n="btn_view_project">View Project</a>
                     </div>
                 </div>
             </div>
 
         </div>
     </section>
-
-
-
 
 
     <section id="contact" class="contact">
         <h2 class="section-title">Get In <span>Touch</span></h2>
         <div class="contact-container">
             <div class="contact-info">
+                <a href="https://wa.me/393513937001" class="contact-item contact-link" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h3 data-i18n="contact_whatsapp">WhatsApp</h3>
+                    </div>
+                </a>
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
                     <div>
-                        <h3>Email</h3>
-                        <p>leandrotraficante@hotmail.com</p>
-                    </div>
-                </div>
-                <!-- <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <h3>Phone</h3>
-                        <p>+54 9 11 5425-7143</p>
-                    </div>
-                </div> -->
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h3>Location</h3>
-                        <p>Buenos Aires, Argentina</p>
+                        <h3 data-i18n="contact_email">Email</h3>
+                        <p>bautitraficante@gmail.com</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2026 Leandro Traficante. All rights reserved.</p>
+            <p>&copy; 2026 Bautista Traficante. <span data-i18n="footer_rights">All rights reserved.</span></p>
             <div class="social-icons">
-                <a href="https://linkedin.com/in/leandrotraficante/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/leandrotraficante" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/bautistatraficante" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 
