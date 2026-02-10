@@ -1145,7 +1145,7 @@ section{
     .nav-controls {
         position: relative;
         z-index: 99;
-        margin-top: auto;
+        margin-top: 0;
         padding-top: 2rem;
         border-top: 2px solid var(--border-color);
         justify-content: center;

@@ -17,6 +17,7 @@ const translations = {
         hero_bio: "Digital Marketer with experience in social media, content creation, video editing (TikTok, Reels, Shorts), and branding. I plan and produce content that aligns with brand identity, manage editorial calendars, and collaborate with brands and influencers. Fluent in Spanish, English, and Italian. Open to new challenges and opportunities.",
         btn_contact: 'Contact Me',
         btn_cv: 'Download CV',
+        cv_url: 'https://drive.google.com/file/d/1AYfighBboxWgGIotqY9ieF3rpslVepLR/view?usp=drivesdk',
         // Section titles
         title_skills: 'Skills',
         title_education: 'Education',
@@ -103,6 +104,7 @@ const translations = {
         hero_bio: 'Marketer digital con experiencia en redes sociales, creación de contenido, edición de video (TikTok, Reels, Shorts) y branding. Planifico y produzco contenido alineado con la identidad de marca, gestiono calendarios editoriales y colaboro con marcas e influencers. Fluido en español, inglés e italiano. Abierto a nuevos desafíos y oportunidades.',
         btn_contact: 'Contacto',
         btn_cv: 'Descargar CV',
+        cv_url: 'https://drive.google.com/file/d/1hCRc1owhp8sxIG8mr_kstM0C8QSr0G8o/view?usp=sharing',
         title_skills: 'Habilidades',
         title_education: 'Formación',
         title_experience: 'Experiencia',
@@ -181,6 +183,7 @@ const translations = {
         hero_bio: 'Digital Marketer con esperienza in social media, creazione di contenuti, video editing (TikTok, Reels, Shorts) e branding. Pianifico e produco contenuti allineati all\'identità di marca, gestisco calendari editoriali e collaboro con brand e influencer. Fluente in spagnolo, inglese e italiano. Aperto a nuove sfide e opportunità.',
         btn_contact: 'Contattami',
         btn_cv: 'Scarica CV',
+        cv_url: 'https://drive.google.com/file/d/1NdJ2zq36fuoov6mjkdDs9a9TNlgrMXjG/view?usp=drivesdk',
         title_skills: 'Competenze',
         title_education: 'Formazione',
         title_experience: 'Esperienza',
@@ -285,6 +288,9 @@ function applyTranslations(lang) {
             el.innerHTML = prefix ? prefix + ' <span>' + t.title_contact + '</span>' : '<span>' + t.title_contact + '</span>';
         }
     });
+    // CV link: actualizar href según idioma
+    const cvLink = document.querySelector('a[data-i18n="btn_cv"]');
+    if (cvLink && t.cv_url) cvLink.href = t.cv_url;
 }
 
 function updateLangSwitcherActive(lang) {
